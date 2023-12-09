@@ -34,7 +34,7 @@ class CatalogueViewTests(TestCase):
         response = self.client.get(reverse('home'))
 
         self.assertIn('Django for Professionals (2020)', response.content.decode())
-        self.assertIn('John Doe', response.content.decode())
+        self.assertIn('John Doe raj', response.content.decode())
         self.assertIn('978-1-60309-3', response.content.decode())
 
 class CatalogueTemplateTests(TestCase):
